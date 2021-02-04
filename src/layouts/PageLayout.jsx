@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
 import { BuilderComponent } from '@builder.io/react';
 import { makeStyles } from '@material-ui/core/styles';
-import Link from '../components/Link/Link';
+import { graphql, StaticQuery } from 'gatsby';
+import * as React from 'react';
 import '../builder-settings';
+import Link from '../components/Link/Link';
 import theme from '../theme';
 
 const useStyles = makeStyles(them => ({
@@ -46,6 +46,8 @@ function PageLayout({ children }) {
               />
             </div>
             <div className={classes.content}>{children}</div>
+
+            <h1>Alan le roi</h1>
             <div className={classes.footer}>
               <BuilderComponent
                 renderLink={Link}
